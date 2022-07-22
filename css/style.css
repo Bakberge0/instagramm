@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300&display=swap');
+*{
+    font-family: 'Roboto Slab', serif;
+   
+
+}
+body{
+   background-image: url(../css/img/1658438059519.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 755px;
+    background-position: center;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+/* .container h1{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 90px;
+    margin: 0 auto;
+    padding: 0;
+   
+} */
+
+nav a{
+    text-decoration: none;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 1.85px 0 rgb(#00ffff) ;
+   
+}
+
+.waviy {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1.25px 0 #CAC8C8;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+  nav a img{
+    width: 51px;
+    align-items: center;
+  }
+
+
+  nav a::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  nav a::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform.3s ease;
+  }
+  
+  nav a {
+    position: relative;
+    font-size: 5rem;
+  }
